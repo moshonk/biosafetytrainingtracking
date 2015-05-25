@@ -1,0 +1,106 @@
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\BiosafetyTraining.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\BiosafetyTraining.pdb
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Antlr3.Runtime.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.AspNet.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.Core.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\EntityFramework.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.Infrastructure.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Newtonsoft.Json.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.Formatting.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.WebRequest.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Helpers.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.WebHost.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Mvc.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Optimization.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Razor.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Deployment.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Razor.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\WebGrease.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.Data.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.WebData.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\EntityFramework.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Newtonsoft.Json.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.Formatting.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.WebRequest.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Helpers.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.WebHost.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Mvc.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Razor.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Deployment.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Razor.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.Data.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.WebData.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.AspNet.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.Core.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\obj\Debug\ResolveAssemblyReference.cache
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\obj\Debug\BiosafetyTraining.dll
+c:\users\adminatachee\documents\visual studio 2010\Projects\BiosafetyTraining\BiosafetyTraining\obj\Debug\BiosafetyTraining.pdb
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\BiosafetyTraining.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\BiosafetyTraining.pdb
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Antlr3.Runtime.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.AspNet.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.Core.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\EntityFramework.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.Infrastructure.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Newtonsoft.Json.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.Formatting.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.WebRequest.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Helpers.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.WebHost.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Mvc.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Optimization.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Razor.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Deployment.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Razor.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\WebGrease.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.Data.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.WebData.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\EntityFramework.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Newtonsoft.Json.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.Formatting.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Net.Http.WebRequest.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Helpers.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Http.WebHost.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Mvc.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.Razor.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Deployment.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\System.Web.WebPages.Razor.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.Data.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\WebMatrix.WebData.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.AspNet.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.Core.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OAuth.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Development\BiosafetyTraining\BiosafetyTraining\obj\Debug\BiosafetyTraining.dll
+D:\Development\BiosafetyTraining\BiosafetyTraining\obj\Debug\BiosafetyTraining.pdb
+D:\Development\BiosafetyTraining\BiosafetyTraining\obj\Debug\BiosafetyTraining.csprojResolveAssemblyReference.cache

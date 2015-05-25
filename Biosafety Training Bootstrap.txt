@@ -1,0 +1,98 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="<%: Url.Content("~/favicon.ico") %>" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+  <%--  <%: Styles.Render("~/Content/css") %>
+    <%: Scripts.Render("~/bundles/modernizr") %>
+    <%: Scripts.Render("~/bundles/jquery") %>--%>
+
+    <link href="<%:Url.Content("~/Content/Site.css") %>"" rel="stylesheet" type="text/css" />
+    <link href="<%:Url.Content("~/Content/Site.print.css") %>"" rel="stylesheet" type="text/css" media="print"/>
+    <script src="<%:Url.Content("~/Scripts/jquery-1.7.2.min.js") %>"" type="text/javascript"></script>
+
+   <!-- twitter bootstrap css library-->
+    <link href="<%: Url.Content("~/Content/bootstrap.min.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: Url.Content("~/Content/bootstrap.extra.css") %>" rel="stylesheet" type="text/css" />
+    <link href="<%: Url.Content("~/Content/jquery.cleditor.css") %>" rel="stylesheet" type="text/css" />
+
+    <script src="<%: Url.Content("~/Scripts/bootstrap-modal.js") %>" type="text/javascript"></script>
+    <script src="<%:Url.Content("~/Scripts/bootstrap-dropdown.js")%>" type="text/javascript"></script>
+    
+    <!-- jquery ui -->
+    <script src="<%:Url.Content("~/Scripts/jquery-ui-1.8.11.min.js")%>" type="text/javascript"></script> 
+    <link href="<%:Url.Content("~/Content/themes/base/jquery.ui.all.css")%>" rel="stylesheet" type="text/css" />
+ 
+    <script src="<%:Url.Content("~/Scripts/modernizr-1.7.min.js")%>" type="text/javascript"></script>
+    <script src="<%:Url.Content("~/Scripts/jquery.tablesorter.min.js")%>" type="text/javascript"></script>
+
+    <script src="<%:Url.Content("~/Scripts/jquery-calendar.js")%>" type="text/javascript"></script>
+   
+    <script src="<%:Url.Content("~/Scripts/jquery.validate.js")%>" type="text/javascript"></script>
+    <script src="<%:Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js") %>" type="text/javascript"></script>
+    <script src="<%:Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js") %>" type="text/javascript"></script>
+    <script src="<%:Url.Content("~/Scripts/methods_es.js")%>" type="text/javascript"></script>
+
+    <!--WYSIWYG editor-->
+    <script src="<%:Url.Content("~/Scripts/jquery.cleditor.min.js") %>" type="text/javascript"></script>
+    
+    <!--chossen jquery dropdown-->
+     <link href="<%:Url.Content("~/Content/chosen.css")%>" rel="stylesheet" type="text/css" />
+    <script src="<%:Url.Content("~/Scripts/chosen.jquery.js")%>" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("div.chzn-select select").chosen();
+            $(".chzn-select-deselect").chosen({ allow_single_deselect: true });
+
+            $(".datefield").datepicker({ "dateFormat": 'mm.dd.yy' });
+
+        });
+    </script>
+
+
+    <asp:ContentPlaceHolder ID="ScriptsSection" runat="server" />
+
+</head>
+<body>
+    <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><%: Html.ActionLink("your logo here", "Index", "Home") %></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        <%: Html.Partial("_LoginPartial") %>
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><%: Html.ActionLink("Home", "Index", "Training") %></li>
+                            <li><%: Html.ActionLink("Counties", "Index", "County") %></li>
+                            <li><%: Html.ActionLink("Affiliations", "Index", "Affiliation") %></li>
+                            <li><%: Html.ActionLink("Job Titles", "Index", "JobTitle")%></li>
+                            <li><%: Html.ActionLink("Locations", "Index", "Location")%></li>
+                            <li><%: Html.ActionLink("Person", "Index", "Person")%></li>
+                            <li><%: Html.ActionLink("Training", "Index", "Training")%></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    <div id="body">
+        <asp:ContentPlaceHolder ID="FeaturedContent" runat="server" />
+        <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </section>
+    </div>
+    <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET MVC Application</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BiosafetyTrainingModelStoreContainer" CdmEntityContainer="BiosafetyEntities">
+    <EntitySetMapping Name="affiliations">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.affiliation">
+        <MappingFragment StoreEntitySet="affiliation">
+          <ScalarProperty Name="affiliation_id" ColumnName="affiliation_id" />
+          <ScalarProperty Name="affiliation_name" ColumnName="affiliation_name" />
+          <ScalarProperty Name="affiliation_description" ColumnName="affiliation_description" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="counties">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.county">
+        <MappingFragment StoreEntitySet="county">
+          <ScalarProperty Name="county_id" ColumnName="county_id" />
+          <ScalarProperty Name="county_name" ColumnName="county_name" />
+          <ScalarProperty Name="county_code" ColumnName="county_code" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="job_title">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.job_title">
+        <MappingFragment StoreEntitySet="job_title">
+          <ScalarProperty Name="job_title_id" ColumnName="job_title_id" />
+          <ScalarProperty Name="job_title_name" ColumnName="job_title_name" />
+          <ScalarProperty Name="job_title_description" ColumnName="job_title_description" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="locations">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.location">
+        <MappingFragment StoreEntitySet="location">
+          <ScalarProperty Name="location_description" ColumnName="location_description" />
+          <ScalarProperty Name="location_id" ColumnName="location_id" />
+          <ScalarProperty Name="location_name" ColumnName="location_name" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="organizations">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.organization">
+        <MappingFragment StoreEntitySet="organization">
+          <ScalarProperty Name="organization_id" ColumnName="organization_id" />
+          <ScalarProperty Name="organization_name" ColumnName="organization_name" />
+          <ScalarProperty Name="organization_description" ColumnName="organization_description" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="people">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.person">
+        <MappingFragment StoreEntitySet="person">
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="person_id" ColumnName="person_id" />
+          <ScalarProperty Name="id_no" ColumnName="id_no" />
+          <ScalarProperty Name="passport_no" ColumnName="passport_no" />
+          <ScalarProperty Name="cell_no" ColumnName="cell_no" />
+          <ScalarProperty Name="alt_cell_no" ColumnName="alt_cell_no" />
+          <ScalarProperty Name="job_title_id" ColumnName="job_title_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="organization_id" ColumnName="organization_id" />
+          <ScalarProperty Name="affiliation_id" ColumnName="affiliation_id" />
+          <ScalarProperty Name="postal_address" ColumnName="postal_address" />
+          <ScalarProperty Name="county_id" ColumnName="county_id" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="trainings">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.training">
+        <MappingFragment StoreEntitySet="training">
+          <ScalarProperty Name="training_type_id" ColumnName="training_type_id" />
+          <ScalarProperty Name="training_last_date" ColumnName="training_last_date" />
+          <ScalarProperty Name="training_start_date" ColumnName="training_start_date" />
+          <ScalarProperty Name="training_id" ColumnName="training_id" />
+          <ScalarProperty Name="location_id" ColumnName="location_id" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="training_facilitator">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.training_facilitator">
+        <MappingFragment StoreEntitySet="training_facilitator">
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="person_id" ColumnName="person_id" />
+          <ScalarProperty Name="training_id" ColumnName="training_id" />
+          <ScalarProperty Name="training_facilitator_id" ColumnName="training_facilitator_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="training_participant">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.training_participant">
+        <MappingFragment StoreEntitySet="training_participant">
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="county_id" ColumnName="county_id" />
+          <ScalarProperty Name="postal_address" ColumnName="postal_address" />
+          <ScalarProperty Name="affiliation_id" ColumnName="affiliation_id" />
+          <ScalarProperty Name="organization_id" ColumnName="organization_id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="job_title_id" ColumnName="job_title_id" />
+          <ScalarProperty Name="alt_cell_no" ColumnName="alt_cell_no" />
+          <ScalarProperty Name="cell_no" ColumnName="cell_no" />
+          <ScalarProperty Name="passport_no" ColumnName="passport_no" />
+          <ScalarProperty Name="id_no" ColumnName="id_no" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="training_id" ColumnName="training_id" />
+          <ScalarProperty Name="training_participant_id" ColumnName="training_participant_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="training_type">
+      <EntityTypeMapping TypeName="BiosafetyTrainingModel.training_type">
+        <MappingFragment StoreEntitySet="training_type">
+          <ScalarProperty Name="modified_by" ColumnName="modified_by" />
+          <ScalarProperty Name="date_modified" ColumnName="date_modified" />
+          <ScalarProperty Name="created_by" ColumnName="created_by" />
+          <ScalarProperty Name="date_created" ColumnName="date_created" />
+          <ScalarProperty Name="training_type_name" ColumnName="training_type_name" />
+          <ScalarProperty Name="training_type_id" ColumnName="training_type_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

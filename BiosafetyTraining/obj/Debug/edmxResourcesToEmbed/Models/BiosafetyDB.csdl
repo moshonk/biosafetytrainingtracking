@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BiosafetyTrainingModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BiosafetyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="affiliations" EntityType="BiosafetyTrainingModel.affiliation" />
+    <EntitySet Name="counties" EntityType="BiosafetyTrainingModel.county" />
+    <EntitySet Name="job_title" EntityType="BiosafetyTrainingModel.job_title" />
+    <EntitySet Name="locations" EntityType="BiosafetyTrainingModel.location" />
+    <EntitySet Name="organizations" EntityType="BiosafetyTrainingModel.organization" />
+    <EntitySet Name="people" EntityType="BiosafetyTrainingModel.person" />
+    <EntitySet Name="trainings" EntityType="BiosafetyTrainingModel.training" />
+    <AssociationSet Name="FK_person_affiliation" Association="BiosafetyTrainingModel.FK_person_affiliation">
+      <End Role="affiliation" EntitySet="affiliations" />
+      <End Role="person" EntitySet="people" />
+    </AssociationSet>
+    <AssociationSet Name="FK_person_county" Association="BiosafetyTrainingModel.FK_person_county">
+      <End Role="county" EntitySet="counties" />
+      <End Role="person" EntitySet="people" />
+    </AssociationSet>
+    <AssociationSet Name="FK_person_job_title" Association="BiosafetyTrainingModel.FK_person_job_title">
+      <End Role="job_title" EntitySet="job_title" />
+      <End Role="person" EntitySet="people" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_location" Association="BiosafetyTrainingModel.FK_training_location">
+      <End Role="location" EntitySet="locations" />
+      <End Role="training" EntitySet="trainings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_person_organization" Association="BiosafetyTrainingModel.FK_person_organization">
+      <End Role="organization" EntitySet="organizations" />
+      <End Role="person" EntitySet="people" />
+    </AssociationSet>
+    <EntitySet Name="training_facilitator" EntityType="BiosafetyTrainingModel.training_facilitator" />
+    <AssociationSet Name="FK_training_facilitators_person1" Association="BiosafetyTrainingModel.FK_training_facilitators_person1">
+      <End Role="person" EntitySet="people" />
+      <End Role="training_facilitator" EntitySet="training_facilitator" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_facilitators_training1" Association="BiosafetyTrainingModel.FK_training_facilitators_training1">
+      <End Role="training" EntitySet="trainings" />
+      <End Role="training_facilitator" EntitySet="training_facilitator" />
+    </AssociationSet>
+    <EntitySet Name="training_participant" EntityType="BiosafetyTrainingModel.training_participant" />
+    <AssociationSet Name="FK_training_participant_affiliation" Association="BiosafetyTrainingModel.FK_training_participant_affiliation">
+      <End Role="affiliation" EntitySet="affiliations" />
+      <End Role="training_participant" EntitySet="training_participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_participant_county" Association="BiosafetyTrainingModel.FK_training_participant_county">
+      <End Role="county" EntitySet="counties" />
+      <End Role="training_participant" EntitySet="training_participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_participant_job_title" Association="BiosafetyTrainingModel.FK_training_participant_job_title">
+      <End Role="job_title" EntitySet="job_title" />
+      <End Role="training_participant" EntitySet="training_participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_participant_organization" Association="BiosafetyTrainingModel.FK_training_participant_organization">
+      <End Role="organization" EntitySet="organizations" />
+      <End Role="training_participant" EntitySet="training_participant" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_participants_training" Association="BiosafetyTrainingModel.FK_training_participants_training">
+      <End Role="training" EntitySet="trainings" />
+      <End Role="training_participant" EntitySet="training_participant" />
+    </AssociationSet>
+    <EntitySet Name="training_type" EntityType="BiosafetyTrainingModel.training_type" />
+    <AssociationSet Name="FK_training_training_type" Association="BiosafetyTrainingModel.FK_training_training_type">
+      <End Role="training_type" EntitySet="training_type" />
+      <End Role="training" EntitySet="trainings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_training_type_training_type" Association="BiosafetyTrainingModel.FK_training_type_training_type">
+      <End Role="training_type" EntitySet="training_type" />
+      <End Role="training_type1" EntitySet="training_type" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="affiliation">
+    <Key>
+      <PropertyRef Name="affiliation_id" />
+    </Key>
+    <Property Name="affiliation_id" Type="Int32" Nullable="false" />
+    <Property Name="affiliation_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="affiliation_description" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="people" Relationship="BiosafetyTrainingModel.FK_person_affiliation" FromRole="affiliation" ToRole="person" />
+    <NavigationProperty Name="training_participants" Relationship="BiosafetyTrainingModel.FK_training_participant_affiliation" FromRole="affiliation" ToRole="training_participant" />
+  </EntityType>
+  <EntityType Name="county">
+    <Key>
+      <PropertyRef Name="county_id" />
+    </Key>
+    <Property Name="county_id" Type="Int32" Nullable="false" />
+    <Property Name="county_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="county_code" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="people" Relationship="BiosafetyTrainingModel.FK_person_county" FromRole="county" ToRole="person" />
+    <NavigationProperty Name="training_participant" Relationship="BiosafetyTrainingModel.FK_training_participant_county" FromRole="county" ToRole="training_participant" />
+  </EntityType>
+  <EntityType Name="job_title">
+    <Key>
+      <PropertyRef Name="job_title_id" />
+    </Key>
+    <Property Name="job_title_id" Type="Int32" Nullable="false" />
+    <Property Name="job_title_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="job_title_description" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="people" Relationship="BiosafetyTrainingModel.FK_person_job_title" FromRole="job_title" ToRole="person" />
+    <NavigationProperty Name="training_participant" Relationship="BiosafetyTrainingModel.FK_training_participant_job_title" FromRole="job_title" ToRole="training_participant" />
+  </EntityType>
+  <EntityType Name="location">
+    <Key>
+      <PropertyRef Name="location_id" />
+    </Key>
+    <Property Name="location_id" Type="Int32" Nullable="false" />
+    <Property Name="location_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="location_description" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="trainings" Relationship="BiosafetyTrainingModel.FK_training_location" FromRole="location" ToRole="training" />
+  </EntityType>
+  <EntityType Name="organization">
+    <Key>
+      <PropertyRef Name="organization_id" />
+    </Key>
+    <Property Name="organization_id" Type="Int32" Nullable="false" />
+    <Property Name="organization_name" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="organization_description" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="people" Relationship="BiosafetyTrainingModel.FK_person_organization" FromRole="organization" ToRole="person" />
+    <NavigationProperty Name="training_participant" Relationship="BiosafetyTrainingModel.FK_training_participant_organization" FromRole="organization" ToRole="training_participant" />
+  </EntityType>
+  <EntityType Name="person">
+    <Key>
+      <PropertyRef Name="person_id" />
+    </Key>
+    <Property Name="person_id" Type="Int32" Nullable="false" />
+    <Property Name="id_no" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="passport_no" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="cell_no" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="alt_cell_no" Type="String" MaxLength="12" Unicode="true" FixedLength="false" />
+    <Property Name="job_title_id" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="organization_id" Type="Int32" />
+    <Property Name="affiliation_id" Type="Int32" />
+    <Property Name="postal_address" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="county_id" Type="Int32" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="affiliation" Relationship="BiosafetyTrainingModel.FK_person_affiliation" FromRole="person" ToRole="affiliation" />
+    <NavigationProperty Name="county" Relationship="BiosafetyTrainingModel.FK_person_county" FromRole="person" ToRole="county" />
+    <NavigationProperty Name="job_title" Relationship="BiosafetyTrainingModel.FK_person_job_title" FromRole="person" ToRole="job_title" />
+    <NavigationProperty Name="organization" Relationship="BiosafetyTrainingModel.FK_person_organization" FromRole="person" ToRole="organization" />
+    <Property Type="String" Name="first_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="last_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="surname" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="training_facilitator" Relationship="BiosafetyTrainingModel.FK_training_facilitators_person1" FromRole="person" ToRole="training_facilitator" />
+  </EntityType>
+  <EntityType Name="training">
+    <Key>
+      <PropertyRef Name="training_id" />
+    </Key>
+    <Property Name="training_id" Type="Int32" Nullable="false" />
+    <Property Name="location_id" Type="Int32" />
+    <Property Name="notes" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="date_created" Type="DateTime" />
+    <Property Name="created_by" Type="Int32" />
+    <Property Name="date_modified" Type="DateTime" />
+    <Property Name="modified_by" Type="Int32" />
+    <NavigationProperty Name="location" Relationship="BiosafetyTrainingModel.FK_training_location" FromRole="training" ToRole="location" />
+    <NavigationProperty Name="training_facilitator" Relationship="BiosafetyTrainingModel.FK_training_facilitators_training1" FromRole="training" ToRole="training_facilitator" />
+    <NavigationProperty Name="training_participant" Relationship="BiosafetyTrainingModel.FK_training_participants_training" FromRole="training" ToRole="training_participant" />
+    <Property Type="DateTime" Name="training_start_date" />
+    <Property Type="DateTime" Name="training_last_date" />
+    <Property Type="Int32" Name="training_type_id" />
+    <NavigationProperty Name="training_type" Relationship="BiosafetyTrainingModel.FK_training_training_type" FromRole="training" ToRole="training_type" />
+  </EntityType>
+  <Association Name="FK_person_affiliation">
+    <End Role="affiliation" Type="BiosafetyTrainingModel.affiliation" Multiplicity="0..1" />
+    <End Role="person" Type="BiosafetyTrainingModel.person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="affiliation">
+        <PropertyRef Name="affiliation_id" />
+      </Principal>
+      <Dependent Role="person">
+        <PropertyRef Name="affiliation_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_person_county">
+    <End Role="county" Type="BiosafetyTrainingModel.county" Multiplicity="0..1" />
+    <End Role="person" Type="BiosafetyTrainingModel.person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="county">
+        <PropertyRef Name="county_id" />
+      </Principal>
+      <Dependent Role="person">
+        <PropertyRef Name="county_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_person_job_title">
+    <End Role="job_title" Type="BiosafetyTrainingModel.job_title" Multiplicity="0..1" />
+    <End Role="person" Type="BiosafetyTrainingModel.person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="job_title">
+        <PropertyRef Name="job_title_id" />
+      </Principal>
+      <Dependent Role="person">
+        <PropertyRef Name="job_title_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_location">
+    <End Role="location" Type="BiosafetyTrainingModel.location" Multiplicity="0..1" />
+    <End Role="training" Type="BiosafetyTrainingModel.training" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="location_id" />
+      </Principal>
+      <Dependent Role="training">
+        <PropertyRef Name="location_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_person_organization">
+    <End Role="organization" Type="BiosafetyTrainingModel.organization" Multiplicity="0..1" />
+    <End Role="person" Type="BiosafetyTrainingModel.person" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="organization">
+        <PropertyRef Name="organization_id" />
+      </Principal>
+      <Dependent Role="person">
+        <PropertyRef Name="organization_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="training_facilitator">
+    <Key>
+      <PropertyRef Name="training_facilitator_id" />
+    </Key>
+    <Property Type="Int32" Name="training_facilitator_id" Nullable="false" />
+    <Property Type="Int32" Name="training_id" />
+    <Property Type="Int32" Name="person_id" />
+    <Property Type="DateTime" Name="date_created" />
+    <Property Type="Int32" Name="created_by" />
+    <Property Type="DateTime" Name="date_modified" />
+    <Property Type="Int32" Name="modified_by" />
+    <NavigationProperty Name="person" Relationship="BiosafetyTrainingModel.FK_training_facilitators_person1" FromRole="training_facilitator" ToRole="person" />
+    <NavigationProperty Name="training" Relationship="BiosafetyTrainingModel.FK_training_facilitators_training1" FromRole="training_facilitator" ToRole="training" />
+  </EntityType>
+  <Association Name="FK_training_facilitators_person1">
+    <End Type="BiosafetyTrainingModel.person" Role="person" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_facilitator" Role="training_facilitator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="person">
+        <PropertyRef Name="person_id" />
+      </Principal>
+      <Dependent Role="training_facilitator">
+        <PropertyRef Name="person_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_facilitators_training1">
+    <End Type="BiosafetyTrainingModel.training" Role="training" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_facilitator" Role="training_facilitator" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training">
+        <PropertyRef Name="training_id" />
+      </Principal>
+      <Dependent Role="training_facilitator">
+        <PropertyRef Name="training_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="training_participant">
+    <Key>
+      <PropertyRef Name="training_participant_id" />
+    </Key>
+    <Property Type="Int64" Name="training_participant_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="training_id" />
+    <Property Type="String" Name="first_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="last_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="surname" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="id_no" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="passport_no" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="cell_no" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="alt_cell_no" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="job_title_id" />
+    <Property Type="String" Name="email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="organization_id" />
+    <Property Type="Int32" Name="affiliation_id" />
+    <Property Type="String" Name="postal_address" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="county_id" />
+    <Property Type="DateTime" Name="date_created" />
+    <Property Type="Int32" Name="created_by" />
+    <Property Type="DateTime" Name="date_modified" />
+    <Property Type="Int32" Name="modified_by" />
+    <NavigationProperty Name="affiliation" Relationship="BiosafetyTrainingModel.FK_training_participant_affiliation" FromRole="training_participant" ToRole="affiliation" />
+    <NavigationProperty Name="county" Relationship="BiosafetyTrainingModel.FK_training_participant_county" FromRole="training_participant" ToRole="county" />
+    <NavigationProperty Name="job_title" Relationship="BiosafetyTrainingModel.FK_training_participant_job_title" FromRole="training_participant" ToRole="job_title" />
+    <NavigationProperty Name="organization" Relationship="BiosafetyTrainingModel.FK_training_participant_organization" FromRole="training_participant" ToRole="organization" />
+    <NavigationProperty Name="training" Relationship="BiosafetyTrainingModel.FK_training_participants_training" FromRole="training_participant" ToRole="training" />
+  </EntityType>
+  <Association Name="FK_training_participant_affiliation">
+    <End Type="BiosafetyTrainingModel.affiliation" Role="affiliation" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_participant" Role="training_participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="affiliation">
+        <PropertyRef Name="affiliation_id" />
+      </Principal>
+      <Dependent Role="training_participant">
+        <PropertyRef Name="affiliation_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_participant_county">
+    <End Type="BiosafetyTrainingModel.county" Role="county" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_participant" Role="training_participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="county">
+        <PropertyRef Name="county_id" />
+      </Principal>
+      <Dependent Role="training_participant">
+        <PropertyRef Name="county_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_participant_job_title">
+    <End Type="BiosafetyTrainingModel.job_title" Role="job_title" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_participant" Role="training_participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="job_title">
+        <PropertyRef Name="job_title_id" />
+      </Principal>
+      <Dependent Role="training_participant">
+        <PropertyRef Name="job_title_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_participant_organization">
+    <End Type="BiosafetyTrainingModel.organization" Role="organization" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_participant" Role="training_participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="organization">
+        <PropertyRef Name="organization_id" />
+      </Principal>
+      <Dependent Role="training_participant">
+        <PropertyRef Name="organization_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_participants_training">
+    <End Type="BiosafetyTrainingModel.training" Role="training" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training_participant" Role="training_participant" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training">
+        <PropertyRef Name="training_id" />
+      </Principal>
+      <Dependent Role="training_participant">
+        <PropertyRef Name="training_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="training_type">
+    <Key>
+      <PropertyRef Name="training_type_id" />
+    </Key>
+    <Property Type="Int32" Name="training_type_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="training_type_name" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="date_created" />
+    <Property Type="Int32" Name="created_by" />
+    <Property Type="DateTime" Name="date_modified" />
+    <Property Type="Int32" Name="modified_by" />
+    <NavigationProperty Name="trainings" Relationship="BiosafetyTrainingModel.FK_training_training_type" FromRole="training_type" ToRole="training" />
+    <NavigationProperty Name="training_type1" Relationship="BiosafetyTrainingModel.FK_training_type_training_type" FromRole="training_type" ToRole="training_type1" />
+    <NavigationProperty Name="training_type2" Relationship="BiosafetyTrainingModel.FK_training_type_training_type" FromRole="training_type1" ToRole="training_type" />
+  </EntityType>
+  <Association Name="FK_training_training_type">
+    <End Type="BiosafetyTrainingModel.training_type" Role="training_type" Multiplicity="0..1" />
+    <End Type="BiosafetyTrainingModel.training" Role="training" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="training_type">
+        <PropertyRef Name="training_type_id" />
+      </Principal>
+      <Dependent Role="training">
+        <PropertyRef Name="training_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_training_type_training_type">
+    <End Type="BiosafetyTrainingModel.training_type" Role="training_type" Multiplicity="1" />
+    <End Type="BiosafetyTrainingModel.training_type" Role="training_type1" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="training_type">
+        <PropertyRef Name="training_type_id" />
+      </Principal>
+      <Dependent Role="training_type1">
+        <PropertyRef Name="training_type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
